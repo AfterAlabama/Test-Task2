@@ -1,0 +1,14 @@
+
+.secondBlock {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+@media only screen and (min-width: 365px) and (max-width: 500px) {
+	.secondBlock {
+		flex-direction: column;
+	}
+}

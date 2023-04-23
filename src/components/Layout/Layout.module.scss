@@ -1,0 +1,31 @@
+@use '../../styles/variables.module' as vars;
+@import '../../styles/mixins.module.scss';
+
+.layoutContainer {
+	position: relative;
+	overflow: hidden;
+
+	& > div {
+		@include CenteredFlex;
+		height: 100vh;
+		justify-content: space-between;
+		width: 200vw;
+		flex-direction: column;
+		background-color: vars.$background-color;
+
+		.upperWave {
+			width: 100%;
+			overflow: hidden
+		}
+		.lowerWave {
+			width: 105%;
+			overflow: hidden
+		}
+	}
+
+	.layoutChildrenContainer {
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
+}

@@ -1,0 +1,67 @@
+@import '../../../styles/mixins.module.scss';
+
+.speedometer {
+	background: #000000;
+	box-shadow: 0px 0px 47px rgba(0, 0, 0, 0.7);
+	border-radius: 50%;
+	position: relative;
+	@include CenteredFlex;
+
+	&:before {
+		position: absolute;
+		content: '';
+		background: url('../../../assets/Eclipse.png') center center/cover no-repeat;
+		z-index: 1;
+	}
+}
+
+
+@media only screen and (min-width: 1201px){
+	.speedometer {
+		width: 37vh;
+		height: 37vh;
+	
+		&:before {
+			width: 35vh;
+			height: 35vh;
+		}
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+	.speedometer {
+		width: 25vw;
+		height: 25vw;
+	
+		&:before {
+			width: 23vw;
+			height: 23vw;
+		}
+	}
+}
+
+@media only screen and (min-width: 501px) and (max-width: 768px){
+	.speedometer {
+		width: 40vw;
+		height: 40vw;
+	
+		&:before {
+			width: 38vw;
+			height: 38vw;
+		}
+	}
+}
+
+@media only screen and (min-width: 365px) and (max-width: 500px){
+	.speedometer {
+		width: 30vh;
+		height: 30vh;
+	
+		&:before {
+			width: 28vh;
+			height: 28vh;
+		}
+	}
+}
+
+

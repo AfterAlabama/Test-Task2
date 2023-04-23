@@ -1,0 +1,61 @@
+@use '../../../../styles/variables.module' as vars;
+@import '../../../../styles/mixins.module.scss';
+
+.buttonsContainer {
+	button {
+		@include CenteredFlex;
+		padding: 0.8vh 1vh;
+		margin: 5vh 5vh;
+		width: 13.6vh;
+		height: 3.8vh;
+		color: #ffffff;
+		font-size: 1.8vh;
+		background-color: transparent;
+		border: 1px solid #ffffff;
+		border-radius: 20px;
+		cursor: pointer;
+		transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s,border-color 0.5s;
+		&:hover {
+			transform: vars.$onload-transform;
+			box-shadow: vars.$onload-small-box-shadow;
+		}
+
+		button:first-child {
+			&:hover {
+				background-color: vars.$first-button-color;
+				border-color: vars.$first-button-color;
+			}
+		}
+		
+		button:nth-child(2) {
+			&:hover {
+				background-color: vars.$second-button-color;
+				border-color: vars.$second-button-color;
+			}
+		}
+		
+		button:last-child {
+			&:hover {
+				background-color: vars.$third-button-color;
+				border-color: vars.$third-button-color;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 365px) and (max-width: 500px){
+	.buttonsContainer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 50px;
+
+		button {
+			margin: 0 1vw;
+			width: 13vh
+		}
+	}
+}
+
+
+

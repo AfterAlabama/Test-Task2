@@ -1,0 +1,11 @@
+@import '../../../../styles/mixins.module.scss';
+
+.modal {
+	@include AbsoluteElement;
+	background-color: rgba(131, 88, 124, 0.1);
+	width: 100vw;
+	height: 100vh;
+	opacity:0;
+	z-index: 2;
+	display:none
+}

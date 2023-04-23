@@ -1,0 +1,16 @@
+$text-color: #ffe9f6;
+$background-color: #252424;
+$first-button-color: #7a0bc0;
+$second-button-color: #3858c7;
+$third-button-color: #fa58b6;
+$onload-transform: translateY(-5px);
+$onload-big-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.8);
+$onload-small-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+
+:export {
+	firstButtonColor: $first-button-color;
+	secondButtonColor: $second-button-color;
+	thirdButtonColor: $third-button-color;
+	onloadTransform: $onload-transform;
+	onloadSmallBoxShadow: $onload-small-box-shadow;
+}

@@ -1,0 +1,27 @@
+@use '../../../../styles/variables.module' as vars;
+
+.arrowCircle {
+	border-radius: 50%;
+	position: absolute;
+	z-index: 4;
+	background-color: vars.$first-button-color;
+	width: 3.5vh;
+	height: 3.5vh;
+}
+
+.arrow {
+	z-index: 3;
+	width: 55%;
+	transform: translate(3vh, 1vh);
+}
+
+@media only screen and (min-width: 1201px) {
+	.arrowCircle {
+		width: 4vh;
+		height: 4vh;
+	}
+
+	.arrow {
+		transform: translate(4vh, 1.5vh);
+	}
+}
