@@ -14,28 +14,23 @@
 		border: 1px solid #ffffff;
 		border-radius: 20px;
 		cursor: pointer;
-		transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s,border-color 0.5s;
+		transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s,
+			border-color 0.5s;
 		&:hover {
 			transform: vars.$onload-transform;
 			box-shadow: vars.$onload-small-box-shadow;
-		}
 
-		button:first-child {
-			&:hover {
+			&:first-child {
 				background-color: vars.$first-button-color;
 				border-color: vars.$first-button-color;
 			}
-		}
-		
-		button:nth-child(2) {
-			&:hover {
+
+			&:nth-child(2) {
 				background-color: vars.$second-button-color;
 				border-color: vars.$second-button-color;
 			}
-		}
-		
-		button:last-child {
-			&:hover {
+
+			&:last-child {
 				background-color: vars.$third-button-color;
 				border-color: vars.$third-button-color;
 			}
@@ -43,7 +38,7 @@
 	}
 }
 
-@media only screen and (min-width: 365px) and (max-width: 500px){
+@media only screen and (min-width: 365px) and (max-width: 500px) {
 	.buttonsContainer {
 		display: flex;
 		align-items: center;
@@ -52,10 +47,7 @@
 
 		button {
 			margin: 0 1vw;
-			width: 13vh
+			width: 13vh;
 		}
 	}
 }
-
-
-
